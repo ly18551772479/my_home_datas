@@ -1,0 +1,1579 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <!-- Start book 天天生鲜 -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>添加到购物车视图和JS | 天天生鲜</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../cart/cartaddnot-login.html" />
+    
+    
+    <link rel="prev" href="../cart.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="5.1"
+        data-chapter-title="添加到购物车视图和JS"
+        data-filepath="cart/cartadd.md"
+        data-basepath=".."
+        data-revision="Thu Dec 28 2017 16:44:01 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        天天生鲜
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="dailyfresh-day02.html">
+            
+                
+                    <a href="../dailyfresh-day02.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        项目准备
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="dailyfresh-day02/businessmodelintroduced.html">
+            
+                
+                    <a href="../dailyfresh-day02/businessmodelintroduced.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        商业模式介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="dailyfresh-day02/developmentprocessintroduced.html">
+            
+                
+                    <a href="../dailyfresh-day02/developmentprocessintroduced.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        开发流程介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="dailyfresh-day02/demandanalysis.html">
+            
+                
+                    <a href="../dailyfresh-day02/demandanalysis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        项目需求分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="dailyfresh-day02/projectarchitecture.html">
+            
+                
+                    <a href="../dailyfresh-day02/projectarchitecture.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        项目架构分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="dailyfresh-day02/designdatabase.html">
+            
+                
+                    <a href="../dailyfresh-day02/designdatabase.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        数据库设计
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="dailyfresh-day02/modelspecification.html">
+            
+                
+                    <a href="../dailyfresh-day02/modelspecification.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        模型类说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="dailyfresh-day02/createproject.html">
+            
+                
+                    <a href="../dailyfresh-day02/createproject.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        创建dailyfresh项目
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="dailyfresh-day02/register/registershowhtml.html">
+            
+                
+                    <a href="../dailyfresh-day02/register/registershowhtml.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        展示注册页面
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="dailyfresh-day02/register/registerview-get-post.html">
+            
+                
+                    <a href="../dailyfresh-day02/register/registerview-get-post.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        视图函数的get和post请求处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="dailyfresh-day02/register/registerclassview.html">
+            
+                
+                    <a href="../dailyfresh-day02/register/registerclassview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        类视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="dailyfresh-day02/register/registertemplates-static-files.html">
+            
+                
+                    <a href="../dailyfresh-day02/register/registertemplates-static-files.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                        模板加载静态文件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="dailyfresh-day03.html">
+            
+                
+                    <a href="../dailyfresh-day03.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        注册登陆
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="dailyfresh-day03/registerjieshao.html">
+            
+                
+                    <a href="../dailyfresh-day03/registerjieshao.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        注册逻辑介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="dailyfresh-day03/registerluoji-shixian.html">
+            
+                
+                    <a href="../dailyfresh-day03/registerluoji-shixian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        注册逻辑实现
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="dailyfresh-day03/registeruser-active.html">
+            
+                
+                    <a href="../dailyfresh-day03/registeruser-active.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        邮件激活用户
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="dailyfresh-day03/registeruser-active/registercreate-token.html">
+            
+                
+                    <a href="../dailyfresh-day03/registeruser-active/registercreate-token.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.1.</b>
+                        
+                        itsdangerous生成激活token
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="dailyfresh-day03/registeruser-active/registercelery-async-task.html">
+            
+                
+                    <a href="../dailyfresh-day03/registeruser-active/registercelery-async-task.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.2.</b>
+                        
+                        Celery异步发送激活邮件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="dailyfresh-day03/registeruser-active/registeractive-luoji-shixian.html">
+            
+                
+                    <a href="../dailyfresh-day03/registeruser-active/registeractive-luoji-shixian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.3.</b>
+                        
+                        激活逻辑实现
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="dailyfresh-day03/loginluoji-jieshoa.html">
+            
+                
+                    <a href="../dailyfresh-day03/loginluoji-jieshoa.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        登陆逻辑介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="dailyfresh-day03/loginluoji-shixian.html">
+            
+                
+                    <a href="../dailyfresh-day03/loginluoji-shixian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        登陆逻辑实现
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="dailyfresh-day03/loginstate-keep.html">
+            
+                
+                    <a href="../dailyfresh-day03/loginstate-keep.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        状态保持
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="dailyfresh-day03/loginremember-user.html">
+            
+                
+                    <a href="../dailyfresh-day03/loginremember-user.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        登陆记住用户
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="dailyfresh-day03/loginlogout.html">
+            
+                
+                    <a href="../dailyfresh-day03/loginlogout.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        退出登录
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="dailyfresh-day04.html">
+            
+                
+                    <a href="../dailyfresh-day04.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        用户中心
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="dailyfresh-day04/usercenter-login-required.html">
+            
+                
+                    <a href="../dailyfresh-day04/usercenter-login-required.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        @login\_required装饰器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="dailyfresh-day04/usercenter-login-required-next.html">
+            
+                
+                    <a href="../dailyfresh-day04/usercenter-login-required-next.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        限制页面访问的next参数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="dailyfresh-day04/usercenter-addressview.html">
+            
+                
+                    <a href="../dailyfresh-day04/usercenter-addressview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        用户地址页视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="dailyfresh-day04/usercenter-base-template.html">
+            
+                
+                    <a href="../dailyfresh-day04/usercenter-base-template.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        抽离父模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="dailyfresh-day04/usercenter-browsing-history.html">
+            
+                
+                    <a href="../dailyfresh-day04/usercenter-browsing-history.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        商品浏览记录查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="dailyfresh-day04/usercenter-history-show.html">
+            
+                
+                    <a href="../dailyfresh-day04/usercenter-history-show.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        个人中心页展示
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="dailyfreshgoods.html">
+            
+                
+                    <a href="../dailyfreshgoods.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        商品信息
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="dailyfreshgoods/doodsfastdfs.html">
+            
+                
+                    <a href="../dailyfreshgoods/doodsfastdfs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        FastDFS服务器
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="dailyfreshgoods/goodsdjango-fastdfs.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsdjango-fastdfs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                        Django对接FastDFS流程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="dailyfreshgoods/goodscustom-storage-class.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodscustom-storage-class.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.2.</b>
+                        
+                        自定义文件存储系统Storage
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="dailyfreshgoods/goodscustom-storage-test.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodscustom-storage-test.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.3.</b>
+                        
+                        自定义文件存储系统测试
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="dailyfreshgoods/goodstinymce.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodstinymce.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        富文本编辑器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="dailyfreshgoods/goodsindex-html.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsindex-html.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        主页商品信息展示
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="dailyfreshgoods/goodsgenerate-static-html.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsgenerate-static-html.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        页面静态化
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.4.1" data-path="dailyfreshgoods/goodsgenerate-static-html/goodsgenerate-static-html-celery.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsgenerate-static-html/goodsgenerate-static-html-celery.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.1.</b>
+                        
+                        celery生成静态html页面
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.2" data-path="dailyfreshgoods/goodsgenerate-static-html/goodsgenerate-static-html-nginx.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsgenerate-static-html/goodsgenerate-static-html-nginx.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.2.</b>
+                        
+                        配置nginx访问静态页面
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.3" data-path="dailyfreshgoods/goodsgenerate-static-html/goodsgenerate-static-html-model-admin.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsgenerate-static-html/goodsgenerate-static-html-model-admin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.3.</b>
+                        
+                        模型管理类调用celery异步方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.4" data-path="dailyfreshgoods/goodsgenerate-static-html/goodsgenerate-static-html-jingtai-dongyai-yindao.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsgenerate-static-html/goodsgenerate-static-html-jingtai-dongyai-yindao.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.4.</b>
+                        
+                        用户静态动态页面区分
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="dailyfreshgoods/goodsgenerate-static-html/goodsindex-cache.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsgenerate-static-html/goodsindex-cache.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        缓存
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="dailyfreshgoods/doodsidnex-cart.html">
+            
+                
+                    <a href="../dailyfreshgoods/doodsidnex-cart.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        主页购物车
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="dailyfreshgoods/goodsdetail.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsdetail.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        商品详情页
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="dailyfreshgoods/goodslist.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodslist.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        商品列表页
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="dailyfreshgoods/goodssearch-engine.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodssearch-engine.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        商品搜索
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.9.1" data-path="dailyfreshgoods/goodssearch-engine/goodssearch-haystack.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodssearch-engine/goodssearch-haystack.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.1.</b>
+                        
+                        haystack的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9.2" data-path="dailyfreshgoods/goodssearch-engine/goodssearch-chinese-fenci-jieba.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodssearch-engine/goodssearch-chinese-fenci-jieba.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.2.</b>
+                        
+                        中文分词工具jieba
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="cart.html">
+            
+                
+                    <a href="../cart.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        购物车
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="5.1" data-path="cart/cartadd.html">
+            
+                
+                    <a href="../cart/cartadd.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        添加到购物车视图和JS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="cart/cartaddnot-login.html">
+            
+                
+                    <a href="../cart/cartaddnot-login.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        未登录添加购物车介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="cart/cartaddnot-login-code.html">
+            
+                
+                    <a href="../cart/cartaddnot-login-code.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        未登录添加购物车视图和JS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="cart/cartaddgoods.html">
+            
+                
+                    <a href="../cart/cartaddgoods.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        商品模块购物车数量展示
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="cart/carthtml-show.html">
+            
+                
+                    <a href="../cart/carthtml-show.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        购物车页面展示
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="cart/cartmerge-cookie-redis-in-login.html">
+            
+                
+                    <a href="../cart/cartmerge-cookie-redis-in-login.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        登陆时购物车合并cookie和redis
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="cart/cartupdate-api-designe.html">
+            
+                
+                    <a href="../cart/cartupdate-api-designe.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        购物车更新接口设计
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="cart/cartupdate-info.html">
+            
+                
+                    <a href="../cart/cartupdate-info.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        更新购物车数量视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="cart/cartdelete-info.html">
+            
+                
+                    <a href="../cart/cartdelete-info.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        删除购物车记录视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="cart/cartinfo-js-code.html">
+            
+                
+                    <a href="../cart/cartinfo-js-code.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                        购物车前端代码编写
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="order.html">
+            
+                
+                    <a href="../order.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        订单
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="order/orderqueren-fenxi.html">
+            
+                
+                    <a href="../order/orderqueren-fenxi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        订单确认页面分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="order/orderqueren-view-bianxie.html">
+            
+                
+                    <a href="../order/orderqueren-view-bianxie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        订单确认页面后端视图编写
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="order/ding-dan-que-ren-ye-mian-qian-duan-mo-ban-chu-li.html">
+            
+                
+                    <a href="../order/ding-dan-que-ren-ye-mian-qian-duan-mo-ban-chu-li.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        订单确认页面前端模板处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="order/ordercommit-fenxi.html">
+            
+                
+                    <a href="../order/ordercommit-fenxi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        提交订单分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="order/customzhuangshiqi.html">
+            
+                
+                    <a href="../order/customzhuangshiqi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        自定义返回json的登陆验证装饰器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="order/ordercommit-view-bianxie.html">
+            
+                
+                    <a href="../order/ordercommit-view-bianxie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        提交订单后端视图编写
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="order/ordercommit-transaction.html">
+            
+                
+                    <a href="../order/ordercommit-transaction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        提交订单之事务支持
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="order/orderstock-concurent-lock.html">
+            
+                
+                    <a href="../order/orderstock-concurent-lock.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        提交订单之并发和锁
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="order/ordercommit-shiwu-concurrent-lock-test.html">
+            
+                
+                    <a href="../order/ordercommit-shiwu-concurrent-lock-test.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                        提交订单之测试事务并发和锁
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="order/orderdetail-show.html">
+            
+                
+                    <a href="../order/orderdetail-show.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                        我的订单
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="alipay.html">
+            
+                
+                    <a href="../alipay.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        支付宝
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="alipay/alipaydjango-dev-post-order.html">
+            
+                
+                    <a href="../alipay/alipaydjango-dev-post-order.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        提交订单到支付宝
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="alipay/alipaydjango-get-trade-status.html">
+            
+                
+                    <a href="../alipay/alipaydjango-get-trade-status.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        查询支付状态
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="alipay/ordercomment.html">
+            
+                
+                    <a href="../alipay/ordercomment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        订单评论
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="projectbushu.html">
+            
+                
+                    <a href="../projectbushu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        部署
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="projectbushu/bushuuwsgi.html">
+            
+                
+                    <a href="../projectbushu/bushuuwsgi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        WSGI
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="projectbushu/bushuuwsgi-peizhi.html">
+            
+                
+                    <a href="../projectbushu/bushuuwsgi-peizhi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        uWSGI操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="projectbushu/bushunginx-caozuo.html">
+            
+                
+                    <a href="../projectbushu/bushunginx-caozuo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        nginx操作
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="djangomysql-master-salve.html">
+            
+                
+                    <a href="../djangomysql-master-salve.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Django对接MySQL主从
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >天天生鲜</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x6DFB;&#x52A0;&#x5230;&#x8D2D;&#x7269;&#x8F66;&#x89C6;&#x56FE;&#x548C;js">&#x6DFB;&#x52A0;&#x5230;&#x8D2D;&#x7269;&#x8F66;&#x89C6;&#x56FE;&#x548C;JS</h1>
+<h2 id="&#x6DFB;&#x52A0;&#x5230;&#x8D2D;&#x7269;&#x8F66;&#x89C6;&#x56FE;">&#x6DFB;&#x52A0;&#x5230;&#x8D2D;&#x7269;&#x8F66;&#x89C6;&#x56FE;</h2>
+<ul>
+<li>&#x5224;&#x65AD;&#x7528;&#x6237;&#x662F;&#x5426;&#x767B;&#x9646;<ul>
+<li>&#x6B64;&#x65F6;&#x4E0D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x88C5;&#x9970;&#x5668;<code>LoginRequiredMixin</code></li>
+<li>&#x56E0;&#x4E3A;&#x8D2D;&#x7269;&#x8F66;&#x4E2D;&#x4F7F;&#x7528;json&#x5728;&#x524D;&#x540E;&#x7AEF;&#x4EA4;&#x4E92;&#xFF0C;&#x662F;&#x5426;&#x767B;&#x9646;&#x7684;&#x7ED3;&#x679C;&#x4E5F;&#x8981;&#x4EE5;json&#x683C;&#x5F0F;&#x4EA4;&#x7ED9;html</li>
+</ul>
+</li>
+<li>&#x83B7;&#x53D6;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF1A;&#x7528;&#x6237;id&#xFF1A;user_id&#x3002;&#x5546;&#x54C1;id&#xFF1A;sku_id&#x3002;&#x5546;&#x54C1;&#x6570;&#x91CF;&#xFF1A;count</li>
+<li>&#x6821;&#x9A8C;&#x53C2;&#x6570;&#xFF1A;all()&#xFF0C;&#x5224;&#x65AD;&#x53C2;&#x6570;&#x662F;&#x5426;&#x5B8C;&#x6574;</li>
+<li>&#x5224;&#x65AD;&#x5546;&#x54C1;&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5F02;&#x5E38;&#x4E3A;&#xFF1A;<code>GoodsSKU.DoesNotExist</code></li>
+<li>&#x5224;&#x65AD;count&#x662F;&#x5426;&#x662F;&#x6574;&#x6570;&#xFF0C;&#x4E0D;&#x662F;&#x6574;&#x6570;&#xFF0C;&#x5F02;&#x5E38;&#x4E3A;&#xFF1A;<code>Exception</code></li>
+<li>&#x5224;&#x65AD;&#x5E93;&#x5B58;</li>
+<li>&#x4EE5;&#x4E0A;&#x5224;&#x65AD;&#x6CA1;&#x9519;&#xFF0C;&#x624D;&#x80FD;&#x64CD;&#x4F5C;redis,&#x5B58;&#x50A8;&#x5546;&#x54C1;&#x5230;&#x8D2D;&#x7269;&#x8F66;<ul>
+<li>&#x5982;&#x679C;&#x52A0;&#x5165;&#x7684;&#x5546;&#x54C1;&#x4E0D;&#x5728;&#x8D2D;&#x7269;&#x8F66;&#x4E2D;&#xFF0C;&#x76F4;&#x63A5;&#x65B0;&#x589E;&#x5230;&#x8D2D;&#x7269;&#x8F66;</li>
+<li>&#x5982;&#x679C;&#x52A0;&#x5165;&#x7684;&#x5546;&#x54C1;&#x5B58;&#x5728;&#x8D2D;&#x7269;&#x8F66;&#x4E2D;&#xFF0C;&#x76F4;&#x63A5;&#x7D2F;&#x52A0;&#x8BA1;&#x6570;&#x5373;&#x53EF;</li>
+</ul>
+</li>
+<li>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x524D;&#x7AEF;&#x5C55;&#x793A;&#x8D2D;&#x7269;&#x8F66;&#x6570;&#x91CF;&#xFF0C;&#x6240;&#x4EE5;&#x67E5;&#x8BE2;&#x4E00;&#x4E0B;&#x8D2D;&#x7269;&#x8F66;&#x603B;&#x6570;</li>
+<li>&#x63D0;&#x793A;&#xFF1A;<ul>
+<li><code>origin_count = redis_conn.hget(&quot;cart_%s&quot; %user_id, sku_id)</code></li>
+<li><code>origin_count</code>&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x505A;&#x52A0;&#x51CF;&#x64CD;&#x4F5C;&#x9700;&#x8981;&#x8F6C;&#x6210;<code>int(origin_count)</code></li>
+<li>&#x5B57;&#x5178;&#x904D;&#x5386;&#x51FA;&#x6765;&#x7684;&#x503C;&#xFF0C;&#x4E5F;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x505A;&#x52A0;&#x51CF;&#x64CD;&#x4F5C;&#x9700;&#x8981;&#x8F6C;&#x6210;&#x6574;&#x6570;</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AddCartView</span><span class="hljs-params">(View)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x6DFB;&#x52A0;&#x8D2D;&#x7269;&#x8F66;&quot;&quot;&quot;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post</span><span class="hljs-params">(self, request)</span>:</span>
+
+        <span class="hljs-comment"># &#x5224;&#x65AD;&#x7528;&#x6237;&#x662F;&#x5426;&#x767B;&#x9646;</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> request.user.is_authenticated():
+            <span class="hljs-keyword">return</span> JsonResponse({<span class="hljs-string">&apos;code&apos;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&apos;message&apos;</span>:<span class="hljs-string">&apos;&#x7528;&#x6237;&#x672A;&#x767B;&#x5F55;&apos;</span>})
+
+        <span class="hljs-comment"># &#x63A5;&#x6536;&#x6570;&#x636E;&#xFF1A;user_id&#xFF0C;sku_id&#xFF0C;count</span>
+        user_id = request.user.id
+        sku_id = request.POST.get(<span class="hljs-string">&apos;sku_id&apos;</span>)
+        count = request.POST.get(<span class="hljs-string">&apos;count&apos;</span>)
+
+        <span class="hljs-comment"># &#x6821;&#x9A8C;&#x53C2;&#x6570;</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> all([sku_id,count]):
+            <span class="hljs-keyword">return</span> JsonResponse({<span class="hljs-string">&apos;code&apos;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&apos;message&apos;</span>: <span class="hljs-string">&apos;&#x53C2;&#x6570;&#x4E0D;&#x5B8C;&#x6574;&apos;</span>})
+
+        <span class="hljs-comment"># &#x5224;&#x65AD;&#x5546;&#x54C1;&#x662F;&#x5426;&#x5B58;&#x5728;</span>
+        <span class="hljs-keyword">try</span>:
+            sku = GoodsSKU.objects.get(id=sku_id)
+        <span class="hljs-keyword">except</span> GoodsSKU.DoesNotExist:
+            <span class="hljs-keyword">return</span> JsonResponse({<span class="hljs-string">&apos;code&apos;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&apos;message&apos;</span>: <span class="hljs-string">&apos;&#x5546;&#x54C1;&#x4E0D;&#x5B58;&#x5728;&apos;</span>})
+
+        <span class="hljs-comment"># &#x5224;&#x65AD;count&#x662F;&#x5426;&#x662F;&#x6574;&#x6570;</span>
+        <span class="hljs-keyword">try</span>:
+            count = int(count)
+        <span class="hljs-keyword">except</span> Exception:
+            <span class="hljs-keyword">return</span> JsonResponse({<span class="hljs-string">&apos;code&apos;</span>: <span class="hljs-number">4</span>, <span class="hljs-string">&apos;message&apos;</span>: <span class="hljs-string">&apos;&#x6570;&#x91CF;&#x9519;&#x8BEF;&apos;</span>})
+
+        <span class="hljs-comment"># &#x5224;&#x65AD;&#x5E93;&#x5B58;</span>
+        <span class="hljs-keyword">if</span> count &gt; sku.stock:
+            <span class="hljs-keyword">return</span> JsonResponse({<span class="hljs-string">&apos;code&apos;</span>: <span class="hljs-number">5</span>, <span class="hljs-string">&apos;message&apos;</span>: <span class="hljs-string">&apos;&#x5E93;&#x5B58;&#x4E0D;&#x8DB3;&apos;</span>})
+
+        <span class="hljs-comment"># &#x64CD;&#x4F5C;redis&#x6570;&#x636E;&#x5E93;&#x5B58;&#x50A8;&#x5546;&#x54C1;&#x5230;&#x8D2D;&#x7269;&#x8F66;</span>
+        redis_conn = get_redis_connection(<span class="hljs-string">&apos;default&apos;</span>)
+        <span class="hljs-comment"># &#x9700;&#x8981;&#x5148;&#x83B7;&#x53D6;&#x8981;&#x6DFB;&#x52A0;&#x5230;&#x8D2D;&#x7269;&#x8F66;&#x7684;&#x5546;&#x54C1;&#x662F;&#x5426;&#x5B58;&#x5728;</span>
+        origin_count = redis_conn.hget(<span class="hljs-string">&apos;cart_%s&apos;</span>%user_id, sku_id)
+        <span class="hljs-comment"># &#x5982;&#x679C;&#x5546;&#x54C1;&#x5728;&#x8D2D;&#x7269;&#x8F66;&#x4E2D;&#x5B58;&#x5728;&#xFF0C;&#x5C31;&#x76F4;&#x63A5;&#x7D2F;&#x52A0;&#x5546;&#x54C1;&#x6570;&#x91CF;&#xFF1B;&#x53CD;&#x4E4B;,&#x628A;&#x65B0;&#x7684;&#x5546;&#x54C1;&#x548C;&#x6570;&#x91CF;&#x6DFB;&#x52A0;&#x5230;&#x8D2D;&#x7269;&#x8F66;</span>
+        <span class="hljs-keyword">if</span> origin_count <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>:
+            count += int(origin_count)
+
+        redis_conn.hset(<span class="hljs-string">&apos;cart_%s&apos;</span>%user_id, sku_id, count)
+
+        <span class="hljs-comment"># &#x4E3A;&#x4E86;&#x914D;&#x5408;&#x6A21;&#x677F;&#x4E2D;js&#x4EA4;&#x4E92;&#x5E76;&#x5C55;&#x793A;&#x8D2D;&#x7269;&#x8F66;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x67E5;&#x8BE2;&#x4E00;&#x4E0B;&#x8D2D;&#x7269;&#x8F66;&#x7684;&#x603B;&#x6570;</span>
+        cart_num = <span class="hljs-number">0</span>
+        cart_dict = redis_conn.hgetall(<span class="hljs-string">&apos;cart_%s&apos;</span>%user_id)
+        <span class="hljs-keyword">for</span> val <span class="hljs-keyword">in</span> cart_dict.values():
+            cart_num += int(val)
+
+        <span class="hljs-comment"># json&#x65B9;&#x5F0F;&#x54CD;&#x5E94;&#x6DFB;&#x52A0;&#x8D2D;&#x7269;&#x8F66;&#x7ED3;&#x679C;</span>
+        <span class="hljs-keyword">return</span> JsonResponse({<span class="hljs-string">&apos;code&apos;</span>: <span class="hljs-number">0</span>, <span class="hljs-string">&apos;message&apos;</span>: <span class="hljs-string">&apos;&#x6DFB;&#x52A0;&#x8D2D;&#x7269;&#x8F66;&#x6210;&#x529F;&apos;</span>, <span class="hljs-string">&apos;cart_num&apos;</span>:cart_num})
+</code></pre>
+<h2 id="&#x6DFB;&#x52A0;&#x5230;&#x8D2D;&#x7269;&#x8F66;js">&#x6DFB;&#x52A0;&#x5230;&#x8D2D;&#x7269;&#x8F66;JS</h2>
+<ul>
+<li>ajax&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#xFF1A;post</li>
+<li>&#x8BF7;&#x6C42;&#x5730;&#x5740;&#xFF1A;/cart/add</li>
+<li>&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#xFF1A;&#x5546;&#x54C1;id+&#x5546;&#x54C1;&#x6570;&#x91CF;+csrftoken</li>
+</ul>
+<h4 id="&#x6DFB;&#x52A0;&#x8D2D;&#x7269;&#x8F66;&#x6807;&#x7B7E;">&#x6DFB;&#x52A0;&#x8D2D;&#x7269;&#x8F66;&#x6807;&#x7B7E;</h4>
+<p><img src="images/&#x6DFB;&#x52A0;&#x5230;&#x8D2D;&#x7269;&#x8F66;&#x53C2;&#x6570;.png" alt=""></p>
+<h4 id="&#x6DFB;&#x52A0;&#x8D2D;&#x7269;&#x8F66;ajax&#x8BF7;&#x6C42;">&#x6DFB;&#x52A0;&#x8D2D;&#x7269;&#x8F66;ajax&#x8BF7;&#x6C42;</h4>
+<pre><code class="lang-js">$(<span class="hljs-string">&apos;#add_cart&apos;</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">// &#x5C06;&#x5546;&#x54C1;&#x7684;id&#x548C;&#x6570;&#x91CF;&#x53D1;&#x9001;&#x7ED9;&#x540E;&#x7AEF;&#x89C6;&#x56FE;&#xFF0C;&#x540E;&#x7AEF;&#x8FDB;&#x884C;&#x8D2D;&#x7269;&#x8F66;&#x6570;&#x636E;&#x7684;&#x8BB0;&#x5F55;</span>
+    <span class="hljs-comment">// &#x83B7;&#x53D6;&#x5546;&#x54C1;&#x7684;id&#x548C;&#x6570;&#x91CF;</span>
+    <span class="hljs-keyword">var</span> request_data = {
+        sku_id: $(<span class="hljs-string">&apos;#add_cart&apos;</span>).attr(<span class="hljs-string">&apos;sku_id&apos;</span>),
+        count: $(<span class="hljs-string">&apos;#num_show&apos;</span>).val(),
+        csrfmiddlewaretoken: <span class="hljs-string">&quot;{{ csrf_token }}&quot;</span>
+    };
+
+    <span class="hljs-comment">// &#x4F7F;&#x7528;ajax&#x5411;&#x540E;&#x7AEF;&#x53D1;&#x9001;&#x6570;&#x636E;</span>
+    $.post(<span class="hljs-string">&apos;/cart/add&apos;</span>, request_data, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">response_data</span>) </span>{
+        <span class="hljs-comment">// &#x6839;&#x636E;&#x540E;&#x7AEF;&#x54CD;&#x5E94;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x51B3;&#x5B9A;&#x5904;&#x7406;&#x6548;&#x679C;</span>
+        <span class="hljs-keyword">if</span> (<span class="hljs-number">1</span> == response_data.code){
+            location.href = <span class="hljs-string">&apos;/users/login&apos;</span>; <span class="hljs-comment">// &#x5982;&#x679C;&#x672A;&#x767B;&#x5F55;&#xFF0C;&#x8DF3;&#x8F6C;&#x5230;&#x767B;&#x5F55;&#x9875;&#x9762;</span>
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-number">0</span> == response_data.code) {
+            $(<span class="hljs-string">&quot;.add_jump&quot;</span>).stop().animate({
+        <span class="hljs-string">&apos;left&apos;</span>: $to_y+<span class="hljs-number">7</span>,
+        <span class="hljs-string">&apos;top&apos;</span>: $to_x+<span class="hljs-number">7</span>},
+        <span class="hljs-string">&quot;fast&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+                $(<span class="hljs-string">&quot;.add_jump&quot;</span>).fadeOut(<span class="hljs-string">&apos;fast&apos;</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+                    <span class="hljs-comment">// &#x5C55;&#x793A;&#x8D2D;&#x7269;&#x8F66;&#x603B;&#x6570;&#x91CF;</span>
+                    $(<span class="hljs-string">&apos;#show_count&apos;</span>).html(response_data.cart_num);
+                });
+            });
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-comment">// &#x5176;&#x4ED6;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x7B80;&#x5355;&#x5F39;&#x51FA;&#x6765;</span>
+            alert(response_data.message);
+        }
+    });
+});
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../cart.html" class="navigation navigation-prev " aria-label="Previous page: 购物车"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../cart/cartaddnot-login.html" class="navigation navigation-next " aria-label="Next page: 未登录添加购物车介绍"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"toggle-chapters":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book 天天生鲜 -->
+</html>

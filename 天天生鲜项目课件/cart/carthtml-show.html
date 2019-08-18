@@ -1,0 +1,1760 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <!-- Start book 天天生鲜 -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>购物车页面展示 | 天天生鲜</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../cart/cartmerge-cookie-redis-in-login.html" />
+    
+    
+    <link rel="prev" href="../cart/cartaddgoods.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="5.5"
+        data-chapter-title="购物车页面展示"
+        data-filepath="cart/carthtml-show.md"
+        data-basepath=".."
+        data-revision="Thu Dec 28 2017 16:44:01 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        天天生鲜
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="dailyfresh-day02.html">
+            
+                
+                    <a href="../dailyfresh-day02.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        项目准备
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="dailyfresh-day02/businessmodelintroduced.html">
+            
+                
+                    <a href="../dailyfresh-day02/businessmodelintroduced.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        商业模式介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="dailyfresh-day02/developmentprocessintroduced.html">
+            
+                
+                    <a href="../dailyfresh-day02/developmentprocessintroduced.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        开发流程介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="dailyfresh-day02/demandanalysis.html">
+            
+                
+                    <a href="../dailyfresh-day02/demandanalysis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        项目需求分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="dailyfresh-day02/projectarchitecture.html">
+            
+                
+                    <a href="../dailyfresh-day02/projectarchitecture.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        项目架构分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="dailyfresh-day02/designdatabase.html">
+            
+                
+                    <a href="../dailyfresh-day02/designdatabase.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        数据库设计
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="dailyfresh-day02/modelspecification.html">
+            
+                
+                    <a href="../dailyfresh-day02/modelspecification.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        模型类说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="dailyfresh-day02/createproject.html">
+            
+                
+                    <a href="../dailyfresh-day02/createproject.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        创建dailyfresh项目
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="dailyfresh-day02/register/registershowhtml.html">
+            
+                
+                    <a href="../dailyfresh-day02/register/registershowhtml.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        展示注册页面
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="dailyfresh-day02/register/registerview-get-post.html">
+            
+                
+                    <a href="../dailyfresh-day02/register/registerview-get-post.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        视图函数的get和post请求处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="dailyfresh-day02/register/registerclassview.html">
+            
+                
+                    <a href="../dailyfresh-day02/register/registerclassview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        类视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="dailyfresh-day02/register/registertemplates-static-files.html">
+            
+                
+                    <a href="../dailyfresh-day02/register/registertemplates-static-files.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                        模板加载静态文件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="dailyfresh-day03.html">
+            
+                
+                    <a href="../dailyfresh-day03.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        注册登陆
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="dailyfresh-day03/registerjieshao.html">
+            
+                
+                    <a href="../dailyfresh-day03/registerjieshao.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        注册逻辑介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="dailyfresh-day03/registerluoji-shixian.html">
+            
+                
+                    <a href="../dailyfresh-day03/registerluoji-shixian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        注册逻辑实现
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="dailyfresh-day03/registeruser-active.html">
+            
+                
+                    <a href="../dailyfresh-day03/registeruser-active.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        邮件激活用户
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="dailyfresh-day03/registeruser-active/registercreate-token.html">
+            
+                
+                    <a href="../dailyfresh-day03/registeruser-active/registercreate-token.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.1.</b>
+                        
+                        itsdangerous生成激活token
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="dailyfresh-day03/registeruser-active/registercelery-async-task.html">
+            
+                
+                    <a href="../dailyfresh-day03/registeruser-active/registercelery-async-task.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.2.</b>
+                        
+                        Celery异步发送激活邮件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="dailyfresh-day03/registeruser-active/registeractive-luoji-shixian.html">
+            
+                
+                    <a href="../dailyfresh-day03/registeruser-active/registeractive-luoji-shixian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.3.</b>
+                        
+                        激活逻辑实现
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="dailyfresh-day03/loginluoji-jieshoa.html">
+            
+                
+                    <a href="../dailyfresh-day03/loginluoji-jieshoa.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        登陆逻辑介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="dailyfresh-day03/loginluoji-shixian.html">
+            
+                
+                    <a href="../dailyfresh-day03/loginluoji-shixian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        登陆逻辑实现
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="dailyfresh-day03/loginstate-keep.html">
+            
+                
+                    <a href="../dailyfresh-day03/loginstate-keep.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        状态保持
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="dailyfresh-day03/loginremember-user.html">
+            
+                
+                    <a href="../dailyfresh-day03/loginremember-user.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        登陆记住用户
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="dailyfresh-day03/loginlogout.html">
+            
+                
+                    <a href="../dailyfresh-day03/loginlogout.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        退出登录
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="dailyfresh-day04.html">
+            
+                
+                    <a href="../dailyfresh-day04.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        用户中心
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="dailyfresh-day04/usercenter-login-required.html">
+            
+                
+                    <a href="../dailyfresh-day04/usercenter-login-required.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        @login\_required装饰器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="dailyfresh-day04/usercenter-login-required-next.html">
+            
+                
+                    <a href="../dailyfresh-day04/usercenter-login-required-next.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        限制页面访问的next参数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="dailyfresh-day04/usercenter-addressview.html">
+            
+                
+                    <a href="../dailyfresh-day04/usercenter-addressview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        用户地址页视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="dailyfresh-day04/usercenter-base-template.html">
+            
+                
+                    <a href="../dailyfresh-day04/usercenter-base-template.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        抽离父模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="dailyfresh-day04/usercenter-browsing-history.html">
+            
+                
+                    <a href="../dailyfresh-day04/usercenter-browsing-history.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        商品浏览记录查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="dailyfresh-day04/usercenter-history-show.html">
+            
+                
+                    <a href="../dailyfresh-day04/usercenter-history-show.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        个人中心页展示
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="dailyfreshgoods.html">
+            
+                
+                    <a href="../dailyfreshgoods.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        商品信息
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="dailyfreshgoods/doodsfastdfs.html">
+            
+                
+                    <a href="../dailyfreshgoods/doodsfastdfs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        FastDFS服务器
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="dailyfreshgoods/goodsdjango-fastdfs.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsdjango-fastdfs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                        Django对接FastDFS流程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="dailyfreshgoods/goodscustom-storage-class.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodscustom-storage-class.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.2.</b>
+                        
+                        自定义文件存储系统Storage
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="dailyfreshgoods/goodscustom-storage-test.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodscustom-storage-test.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.3.</b>
+                        
+                        自定义文件存储系统测试
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="dailyfreshgoods/goodstinymce.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodstinymce.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        富文本编辑器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="dailyfreshgoods/goodsindex-html.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsindex-html.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        主页商品信息展示
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="dailyfreshgoods/goodsgenerate-static-html.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsgenerate-static-html.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        页面静态化
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.4.1" data-path="dailyfreshgoods/goodsgenerate-static-html/goodsgenerate-static-html-celery.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsgenerate-static-html/goodsgenerate-static-html-celery.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.1.</b>
+                        
+                        celery生成静态html页面
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.2" data-path="dailyfreshgoods/goodsgenerate-static-html/goodsgenerate-static-html-nginx.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsgenerate-static-html/goodsgenerate-static-html-nginx.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.2.</b>
+                        
+                        配置nginx访问静态页面
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.3" data-path="dailyfreshgoods/goodsgenerate-static-html/goodsgenerate-static-html-model-admin.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsgenerate-static-html/goodsgenerate-static-html-model-admin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.3.</b>
+                        
+                        模型管理类调用celery异步方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.4" data-path="dailyfreshgoods/goodsgenerate-static-html/goodsgenerate-static-html-jingtai-dongyai-yindao.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsgenerate-static-html/goodsgenerate-static-html-jingtai-dongyai-yindao.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.4.</b>
+                        
+                        用户静态动态页面区分
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="dailyfreshgoods/goodsgenerate-static-html/goodsindex-cache.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsgenerate-static-html/goodsindex-cache.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        缓存
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="dailyfreshgoods/doodsidnex-cart.html">
+            
+                
+                    <a href="../dailyfreshgoods/doodsidnex-cart.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        主页购物车
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="dailyfreshgoods/goodsdetail.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodsdetail.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        商品详情页
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="dailyfreshgoods/goodslist.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodslist.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        商品列表页
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="dailyfreshgoods/goodssearch-engine.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodssearch-engine.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        商品搜索
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.9.1" data-path="dailyfreshgoods/goodssearch-engine/goodssearch-haystack.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodssearch-engine/goodssearch-haystack.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.1.</b>
+                        
+                        haystack的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9.2" data-path="dailyfreshgoods/goodssearch-engine/goodssearch-chinese-fenci-jieba.html">
+            
+                
+                    <a href="../dailyfreshgoods/goodssearch-engine/goodssearch-chinese-fenci-jieba.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.2.</b>
+                        
+                        中文分词工具jieba
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="cart.html">
+            
+                
+                    <a href="../cart.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        购物车
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="cart/cartadd.html">
+            
+                
+                    <a href="../cart/cartadd.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        添加到购物车视图和JS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="cart/cartaddnot-login.html">
+            
+                
+                    <a href="../cart/cartaddnot-login.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        未登录添加购物车介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="cart/cartaddnot-login-code.html">
+            
+                
+                    <a href="../cart/cartaddnot-login-code.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        未登录添加购物车视图和JS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="cart/cartaddgoods.html">
+            
+                
+                    <a href="../cart/cartaddgoods.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        商品模块购物车数量展示
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.5" data-path="cart/carthtml-show.html">
+            
+                
+                    <a href="../cart/carthtml-show.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        购物车页面展示
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="cart/cartmerge-cookie-redis-in-login.html">
+            
+                
+                    <a href="../cart/cartmerge-cookie-redis-in-login.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        登陆时购物车合并cookie和redis
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="cart/cartupdate-api-designe.html">
+            
+                
+                    <a href="../cart/cartupdate-api-designe.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        购物车更新接口设计
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="cart/cartupdate-info.html">
+            
+                
+                    <a href="../cart/cartupdate-info.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        更新购物车数量视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="cart/cartdelete-info.html">
+            
+                
+                    <a href="../cart/cartdelete-info.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        删除购物车记录视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="cart/cartinfo-js-code.html">
+            
+                
+                    <a href="../cart/cartinfo-js-code.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                        购物车前端代码编写
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="order.html">
+            
+                
+                    <a href="../order.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        订单
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="order/orderqueren-fenxi.html">
+            
+                
+                    <a href="../order/orderqueren-fenxi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        订单确认页面分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="order/orderqueren-view-bianxie.html">
+            
+                
+                    <a href="../order/orderqueren-view-bianxie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        订单确认页面后端视图编写
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="order/ding-dan-que-ren-ye-mian-qian-duan-mo-ban-chu-li.html">
+            
+                
+                    <a href="../order/ding-dan-que-ren-ye-mian-qian-duan-mo-ban-chu-li.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        订单确认页面前端模板处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="order/ordercommit-fenxi.html">
+            
+                
+                    <a href="../order/ordercommit-fenxi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        提交订单分析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="order/customzhuangshiqi.html">
+            
+                
+                    <a href="../order/customzhuangshiqi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        自定义返回json的登陆验证装饰器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="order/ordercommit-view-bianxie.html">
+            
+                
+                    <a href="../order/ordercommit-view-bianxie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        提交订单后端视图编写
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="order/ordercommit-transaction.html">
+            
+                
+                    <a href="../order/ordercommit-transaction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        提交订单之事务支持
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="order/orderstock-concurent-lock.html">
+            
+                
+                    <a href="../order/orderstock-concurent-lock.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        提交订单之并发和锁
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="order/ordercommit-shiwu-concurrent-lock-test.html">
+            
+                
+                    <a href="../order/ordercommit-shiwu-concurrent-lock-test.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                        提交订单之测试事务并发和锁
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="order/orderdetail-show.html">
+            
+                
+                    <a href="../order/orderdetail-show.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                        我的订单
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="alipay.html">
+            
+                
+                    <a href="../alipay.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        支付宝
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="alipay/alipaydjango-dev-post-order.html">
+            
+                
+                    <a href="../alipay/alipaydjango-dev-post-order.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        提交订单到支付宝
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="alipay/alipaydjango-get-trade-status.html">
+            
+                
+                    <a href="../alipay/alipaydjango-get-trade-status.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        查询支付状态
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="alipay/ordercomment.html">
+            
+                
+                    <a href="../alipay/ordercomment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        订单评论
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="projectbushu.html">
+            
+                
+                    <a href="../projectbushu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        部署
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="projectbushu/bushuuwsgi.html">
+            
+                
+                    <a href="../projectbushu/bushuuwsgi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        WSGI
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="projectbushu/bushuuwsgi-peizhi.html">
+            
+                
+                    <a href="../projectbushu/bushuuwsgi-peizhi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        uWSGI操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="projectbushu/bushunginx-caozuo.html">
+            
+                
+                    <a href="../projectbushu/bushunginx-caozuo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        nginx操作
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="djangomysql-master-salve.html">
+            
+                
+                    <a href="../djangomysql-master-salve.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Django对接MySQL主从
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >天天生鲜</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x8D2D;&#x7269;&#x8F66;&#x9875;&#x9762;&#x5C55;&#x793A;">&#x8D2D;&#x7269;&#x8F66;&#x9875;&#x9762;&#x5C55;&#x793A;</h1>
+<p><img src="images/&#x8D2D;&#x7269;&#x8F66;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x9875;&#x9762;.png" alt=""></p>
+<h2 id="&#x5206;&#x6790;">&#x5206;&#x6790;</h2>
+<ul>
+<li>&#x5982;&#x679C;&#x7528;&#x6237;&#x672A;&#x767B;&#x5F55;&#xFF0C;&#x4ECE;cookie&#x4E2D;&#x83B7;&#x53D6;&#x8D2D;&#x7269;&#x8F66;&#x6570;&#x636E;<pre><code># cookie
+&apos;cart&apos;:&apos;{&apos;sku_1&apos;:10, &apos;sku_2&apos;:20}&apos;
+</code></pre></li>
+<li>&#x5982;&#x679C;&#x7528;&#x6237;&#x5DF2;&#x767B;&#x5F55;&#xFF0C;&#x4ECE;redis&#x4E2D;&#x83B7;&#x53D6;&#x8D2D;&#x7269;&#x8F66;&#x6570;&#x636E;<pre><code>cart_userid:{sku_3, 30}
+</code></pre></li>
+<li>&#x5C55;&#x793A;&#x8D2D;&#x7269;&#x8F66;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x5BA2;&#x6237;&#x7AEF;&#x4F20;&#x9012;&#x6570;&#x636E;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#xFF0C;&#x56E0;&#x4E3A;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x4ECE;cookie&#x6216;&#x8005;redis&#x4E2D;&#x83B7;&#x53D6;</li>
+<li>&#x6CE8;&#x610F;&#xFF1A;&#x4ECE;cookie&#x4E2D;&#x83B7;&#x53D6;&#x7684;count&#x662F;&#x6574;&#x6570;&#xFF0C;&#x4ECE;redis&#x4E2D;&#x83B7;&#x53D6;&#x7684;count&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x9700;&#x8981;&#x7EDF;&#x4E00;&#x7C7B;&#x578B;</li>
+</ul>
+<h2 id="&#x5B9A;&#x4E49;&#x89C6;&#x56FE;">&#x5B9A;&#x4E49;&#x89C6;&#x56FE;</h2>
+<pre><code class="lang-python">url(<span class="hljs-string">r&apos;^cart/&apos;</span>, include(<span class="hljs-string">&apos;cart.urls&apos;</span>, namespace=<span class="hljs-string">&apos;cart&apos;</span>))
+</code></pre>
+<pre><code class="lang-python">url(<span class="hljs-string">r&apos;^$&apos;</span>, views.CartInfoView.as_view(), name=<span class="hljs-string">&apos;info&apos;</span>)
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CartInfoView</span><span class="hljs-params">(View)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x83B7;&#x53D6;&#x8D2D;&#x7269;&#x8F66;&#x6570;&#x636E;&quot;&quot;&quot;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get</span><span class="hljs-params">(self, request)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;&#x63D0;&#x4F9B;&#x8D2D;&#x7269;&#x8F66;&#x9875;&#x9762;&#xFF1A;&#x4E0D;&#x9700;&#x8981;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&quot;&quot;&quot;</span>
+        <span class="hljs-keyword">pass</span>
+</code></pre>
+<h2 id="&#x5C55;&#x793A;&#x8D2D;&#x7269;&#x8F66;&#x6570;&#x636E;&#x89C6;&#x56FE;">&#x5C55;&#x793A;&#x8D2D;&#x7269;&#x8F66;&#x6570;&#x636E;&#x89C6;&#x56FE;</h2>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CartInfoView</span><span class="hljs-params">(View)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;&#x83B7;&#x53D6;&#x8D2D;&#x7269;&#x8F66;&#x6570;&#x636E;&quot;&quot;&quot;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get</span><span class="hljs-params">(self, request)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;&#x63D0;&#x4F9B;&#x8D2D;&#x7269;&#x8F66;&#x9875;&#x9762;&#xFF1A;&#x4E0D;&#x9700;&#x8981;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&quot;&quot;&quot;</span>
+
+        <span class="hljs-comment"># &#x67E5;&#x8BE2;&#x8D2D;&#x7269;&#x8F66;&#x6570;&#x636E;</span>
+        <span class="hljs-comment"># &#x5982;&#x679C;&#x7528;&#x6237;&#x767B;&#x9646;&#x4ECE;redis&#x4E2D;&#x83B7;&#x53D6;&#x6570;&#x636E;</span>
+        <span class="hljs-keyword">if</span> request.user.is_authenticated():
+            <span class="hljs-comment"># &#x521B;&#x5EFA;redis&#x8FDE;&#x63A5;&#x5BF9;&#x8C61;</span>
+            redis_conn = get_redis_connection(<span class="hljs-string">&apos;default&apos;</span>)
+            user_id = request.user.id
+            <span class="hljs-comment"># &#x83B7;&#x53D6;&#x6240;&#x6709;&#x6570;&#x636E;</span>
+            cart_dict = redis_conn.hgetall(<span class="hljs-string">&apos;cart_%s&apos;</span>%user_id)
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-comment"># &#x5982;&#x679C;&#x7528;&#x6237;&#x672A;&#x767B;&#x9646;&#x4ECE;cookie&#x4E2D;&#x83B7;&#x53D6;&#x6570;&#x636E;</span>
+            cart_json = request.COOKIES.get(<span class="hljs-string">&apos;cart&apos;</span>)
+            <span class="hljs-comment"># &#x5224;&#x65AD;&#x7528;&#x6237;&#x662F;&#x5426;&#x64CD;&#x4F5C;&#x8FC7;&#x8D2D;&#x7269;&#x8F66;cookie</span>
+            <span class="hljs-keyword">if</span> cart_json <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>:
+                cart_dict = json.loads(cart_json)
+            <span class="hljs-keyword">else</span>:
+                cart_dict = {}
+
+        <span class="hljs-comment"># &#x4FDD;&#x5B58;&#x904D;&#x5386;&#x51FA;&#x6765;&#x7684;sku</span>
+        skus = []
+        <span class="hljs-comment"># &#x603B;&#x91D1;&#x989D;</span>
+        total_amount = <span class="hljs-number">0</span>
+        <span class="hljs-comment"># &#x603B;&#x6570;&#x91CF;</span>
+        total_count = <span class="hljs-number">0</span>
+
+        <span class="hljs-comment"># &#x904D;&#x5386;cart_dict&#xFF0C;&#x5F62;&#x6210;&#x6A21;&#x677F;&#x6240;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;</span>
+        <span class="hljs-keyword">for</span> sku_id, count <span class="hljs-keyword">in</span> cart_dict.items():
+            <span class="hljs-comment"># &#x67E5;&#x8BE2;&#x5546;&#x54C1;sku</span>
+            <span class="hljs-keyword">try</span>:
+                sku = GoodsSKU.objects.get(id=sku_id)
+            <span class="hljs-keyword">except</span> GoodsSKU.DoesNotExist:
+                <span class="hljs-comment"># &#x5546;&#x54C1;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x8DF3;&#x8FC7;&#x8FD9;&#x4E2A;&#x5546;&#x54C1;&#xFF0C;&#x7EE7;&#x7EED;&#x904D;&#x5386;</span>
+                <span class="hljs-keyword">continue</span>
+
+            <span class="hljs-comment"># &#x5C06;count&#x8F6C;&#x6210;&#x6574;&#x6570;&#xFF0C;&#x56E0;&#x4E3A;redis&#x4E2D;&#x53D6;&#x51FA;&#x7684;count&#x4E0D;&#x662F;&#x6574;&#x6570;&#x7C7B;&#x578B;&#x7684;</span>
+            count = int(count)
+
+            <span class="hljs-comment"># &#x8BA1;&#x7B97;&#x603B;&#x4EF7;</span>
+            amount = sku.price * count
+            <span class="hljs-comment"># &#x5C06;&#x9700;&#x8981;&#x5C55;&#x793A;&#x7684;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x5230;&#x5BF9;&#x8C61;&#x4E2D;</span>
+            sku.amount = amount
+            sku.count = count
+
+            <span class="hljs-comment"># &#x751F;&#x6210;&#x6A21;&#x578B;&#x5217;&#x8868;</span>
+            skus.append(sku)
+
+            <span class="hljs-comment"># &#x8BA1;&#x7B97;&#x603B;&#x91D1;&#x989D;</span>
+            total_amount += amount
+            <span class="hljs-comment"># &#x8BA1;&#x7B97;&#x603B;&#x6570;&#x91CF;</span>
+            total_count += count
+
+        <span class="hljs-comment"># &#x6784;&#x9020;&#x4E0A;&#x4E0B;&#x6587;</span>
+        context = {
+            <span class="hljs-string">&apos;skus&apos;</span>:skus,
+            <span class="hljs-string">&apos;total_amount&apos;</span>:total_amount,
+            <span class="hljs-string">&apos;total_count&apos;</span>:total_count
+        }
+
+        <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;cart.html&apos;</span>, context)
+</code></pre>
+<h2 id="&#x5C55;&#x793A;&#x8D2D;&#x7269;&#x8F66;&#x6570;&#x636E;&#x6A21;&#x677F;">&#x5C55;&#x793A;&#x8D2D;&#x7269;&#x8F66;&#x6570;&#x636E;&#x6A21;&#x677F;</h2>
+<pre><code class="lang-html">{% extends &apos;base.html&apos; %}
+
+{% block title %}&#x5929;&#x5929;&#x751F;&#x9C9C;-&#x8D2D;&#x7269;&#x8F66;{% endblock %}
+{% load staticfiles %}
+
+{% block search_bar %}
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;search_bar clearfix&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;{% url &apos;goods:index&apos; %}&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;logo fl&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;{% static &apos;images/logo.png&apos; %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sub_page_name fl&quot;</span>&gt;</span>|&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&#x8D2D;&#x7269;&#x8F66;<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;search_con fr&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">&quot;/search/&quot;</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">&quot;get&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;input_text fl&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;q&quot;</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">&quot;&#x641C;&#x7D22;&#x5546;&#x54C1;&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;submit&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;input_btn fr&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;&#x641C;&#x7D22;&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+{% endblock %}
+
+{% block body %}
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;total_count&quot;</span>&gt;</span>&#x5168;&#x90E8;&#x5546;&#x54C1;<span class="hljs-tag">&lt;<span class="hljs-title">em</span>&gt;</span>{{total_count}}<span class="hljs-tag">&lt;/<span class="hljs-title">em</span>&gt;</span>&#x4EF6;<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;cart_list_th clearfix&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col01&quot;</span>&gt;</span>&#x5546;&#x54C1;&#x540D;&#x79F0;<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col02&quot;</span>&gt;</span>&#x5546;&#x54C1;&#x5355;&#x4F4D;<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col03&quot;</span>&gt;</span>&#x5546;&#x54C1;&#x4EF7;&#x683C;<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col04&quot;</span>&gt;</span>&#x6570;&#x91CF;<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col05&quot;</span>&gt;</span>&#x5C0F;&#x8BA1;<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col06&quot;</span>&gt;</span>&#x64CD;&#x4F5C;<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">&quot;post&quot;</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>
+    {% csrf_token %}
+    {% for sku in skus %}
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;cart_list_td clearfix&quot;</span> <span class="hljs-attribute">sku_id</span>=<span class="hljs-value">&quot;{{ sku.id }}&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col01&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;checkbox&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;sku_ids&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;{{ sku.id }}&quot;</span> <span class="hljs-attribute">checked</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col02&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;{{ sku.default_image.url }}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col03&quot;</span>&gt;</span>{{ sku.name }}<span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">em</span>&gt;</span>{{ sku.price }}/{{ sku.unit}}<span class="hljs-tag">&lt;/<span class="hljs-title">em</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col04&quot;</span>&gt;</span>{{ sku.unit }}<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col05&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>{{sku.price}}<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>&#x5143;<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col06&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;num_add&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;javascript:;&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;add fl&quot;</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;num_show fl&quot;</span> <span class="hljs-attribute">sku_id</span>=<span class="hljs-value">&quot;{{ sku.id }}&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;{{sku.count}}&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;javascript:;&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;minus fl&quot;</span>&gt;</span>-<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col07&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>{{sku.amount}}<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>&#x5143;<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col08&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;javascript:;&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;del_btn&quot;</span>&gt;</span>&#x5220;&#x9664;<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+    {% endfor %}
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;settlements&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col01&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;checkbox&quot;</span> <span class="hljs-attribute">checked</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col02&quot;</span>&gt;</span>&#x5168;&#x9009;<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col03&quot;</span>&gt;</span>&#x5408;&#x8BA1;(&#x4E0D;&#x542B;&#x8FD0;&#x8D39;)&#xFF1A;<span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>&#xA5;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">em</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;total_amount&quot;</span>&gt;</span>{{total_amount}}<span class="hljs-tag">&lt;/<span class="hljs-title">em</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>&#x5171;&#x8BA1;<span class="hljs-tag">&lt;<span class="hljs-title">b</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;total_count&quot;</span>&gt;</span>{{total_count}}<span class="hljs-tag">&lt;/<span class="hljs-title">b</span>&gt;</span>&#x4EF6;&#x5546;&#x54C1;<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col04&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;place_order.html&quot;</span>&gt;</span>&#x53BB;&#x7ED3;&#x7B97;<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+
+{% endblock %}
+
+{% block bottom_files %}
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/javascript&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;{% static &apos;js/jquery-1.12.2.js&apos; %}&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript">
+        <span class="hljs-comment">// &#x66F4;&#x65B0;&#x9875;&#x9762;&#x5408;&#x8BA1;&#x4FE1;&#x606F;</span>
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">freshOrderCommitInfo</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">var</span> total_amount = <span class="hljs-number">0</span>;  <span class="hljs-comment">//&#x603B;&#x91D1;&#x989D;</span>
+            <span class="hljs-keyword">var</span> total_count = <span class="hljs-number">0</span>;  <span class="hljs-comment">// &#x603B;&#x6570;&#x91CF;</span>
+            $(<span class="hljs-string">&apos;.cart_list_td&apos;</span>).find(<span class="hljs-string">&apos;:checked&apos;</span>).parents(<span class="hljs-string">&apos;ul&apos;</span>).each(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                <span class="hljs-keyword">var</span> sku_amount = $(<span class="hljs-keyword">this</span>).children(<span class="hljs-string">&apos;li.col07&apos;</span>).text();  <span class="hljs-comment">// &#x5546;&#x54C1;&#x7684;&#x91D1;&#x989D;</span>
+                <span class="hljs-keyword">var</span> sku_count = $(<span class="hljs-keyword">this</span>).find(<span class="hljs-string">&apos;.num_show&apos;</span>).val();  <span class="hljs-comment">// &#x5546;&#x54C1;&#x7684;&#x6570;&#x91CF;</span>
+                total_count += <span class="hljs-built_in">parseInt</span>(sku_count);
+                total_amount += <span class="hljs-built_in">parseFloat</span>(sku_amount);
+            });
+            <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x5546;&#x54C1;&#x7684;&#x603B;&#x6570;&#x548C;&#x603B;&#x4EF7;</span>
+            $(<span class="hljs-string">&quot;#total_amount&quot;</span>).text(total_amount.toFixed(<span class="hljs-number">2</span>));
+            $(<span class="hljs-string">&quot;#total_count&quot;</span>).text(total_count);
+        }
+
+        <span class="hljs-comment">// &#x66F4;&#x65B0;&#x9875;&#x9762;&#x9876;&#x7AEF;&#x5168;&#x90E8;&#x5546;&#x54C1;&#x6570;&#x91CF;</span>
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">freshTotalGoodsCount</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">var</span> total_count = <span class="hljs-number">0</span>;
+            $(<span class="hljs-string">&apos;.cart_list_td&apos;</span>).find(<span class="hljs-string">&apos;:checkbox&apos;</span>).parents(<span class="hljs-string">&apos;ul&apos;</span>).each(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                <span class="hljs-keyword">var</span> sku_count = $(<span class="hljs-keyword">this</span>).find(<span class="hljs-string">&apos;.num_show&apos;</span>).val();
+                total_count += <span class="hljs-built_in">parseInt</span>(sku_count);
+            });
+            $(<span class="hljs-string">&quot;.total_count&gt;em&quot;</span>).text(total_count);
+        }
+
+        <span class="hljs-comment">// &#x66F4;&#x65B0;&#x540E;&#x7AEF;&#x8D2D;&#x7269;&#x8F66;&#x4FE1;&#x606F;</span>
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateRemoteCartInfo</span>(<span class="hljs-params">sku_id, sku_count, num_dom</span>) </span>{
+            <span class="hljs-comment">// &#x53D1;&#x9001;&#x7ED9;&#x540E;&#x7AEF;&#x7684;&#x6570;&#x636E;</span>
+            <span class="hljs-keyword">var</span> req = {
+                sku_id: sku_id,
+                count: sku_count,
+                csrfmiddlewaretoken: <span class="hljs-string">&quot;{{ csrf_token }}&quot;</span>
+            };
+            $.post(<span class="hljs-string">&quot;/cart/update&quot;</span>, req, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>)</span>{
+                <span class="hljs-keyword">if</span> (<span class="hljs-number">0</span> == data.code) {
+                    <span class="hljs-comment">// &#x66F4;&#x65B0;&#x5546;&#x54C1;&#x6570;&#x91CF;</span>
+                    $(num_dom).val(sku_count);
+                    <span class="hljs-comment">// &#x66F4;&#x65B0;&#x5546;&#x54C1;&#x91D1;&#x989D;&#x4FE1;&#x606F;</span>
+                    <span class="hljs-keyword">var</span> sku_price = $(<span class="hljs-string">&quot;.cart_list_td[sku_id=&quot;</span>+sku_id+<span class="hljs-string">&quot;]&quot;</span>).children(<span class="hljs-string">&apos;li.col05&apos;</span>).children().text();
+                    <span class="hljs-keyword">var</span> sku_amount = <span class="hljs-built_in">parseFloat</span>(sku_price) * sku_count;
+                    $(<span class="hljs-string">&quot;.cart_list_td[sku_id=&quot;</span>+sku_id+<span class="hljs-string">&quot;]&quot;</span>).children(<span class="hljs-string">&apos;li.col07&apos;</span>).children().text(sku_amount.toFixed(<span class="hljs-number">2</span>));
+                    <span class="hljs-comment">// &#x66F4;&#x65B0;&#x9876;&#x90E8;&#x5546;&#x54C1;&#x603B;&#x6570;</span>
+                    freshTotalGoodsCount();
+                    <span class="hljs-comment">// &#x66F4;&#x65B0;&#x5E95;&#x90E8;&#x5408;&#x8BA1;&#x4FE1;&#x606F;</span>
+                    freshOrderCommitInfo();
+                } <span class="hljs-keyword">else</span> {
+                    alert(data.message);
+                }
+            });
+        }
+
+        <span class="hljs-comment">// &#x589E;&#x52A0;</span>
+        $(<span class="hljs-string">&quot;.add&quot;</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+            <span class="hljs-comment">// &#x83B7;&#x53D6;&#x64CD;&#x4F5C;&#x7684;&#x5546;&#x54C1;id</span>
+            <span class="hljs-keyword">var</span> sku_id = $(<span class="hljs-keyword">this</span>).next().attr(<span class="hljs-string">&quot;sku_id&quot;</span>);
+            <span class="hljs-comment">// &#x83B7;&#x53D6;&#x52A0;&#x64CD;&#x4F5C;&#x524D;&#x7684;&#x7684;&#x6570;&#x91CF;</span>
+            <span class="hljs-keyword">var</span> sku_num = $(<span class="hljs-keyword">this</span>).next().val();
+            <span class="hljs-comment">// &#x8FDB;&#x884C;&#x6570;&#x91CF;&#x52A0;1</span>
+            sku_num = <span class="hljs-built_in">parseInt</span>(sku_num);
+            sku_num += <span class="hljs-number">1</span>;
+
+            <span class="hljs-comment">// &#x663E;&#x793A;&#x5546;&#x54C1;&#x6570;&#x76EE;&#x7684;dom</span>
+            <span class="hljs-keyword">var</span> num_dom = $(<span class="hljs-keyword">this</span>).next();
+            <span class="hljs-comment">// &#x66F4;&#x65B0;&#x8D2D;&#x7269;&#x8F66;&#x6570;&#x91CF;</span>
+            updateRemoteCartInfo(sku_id, sku_num, num_dom);
+        });
+
+        <span class="hljs-comment">// &#x51CF;&#x5C11;</span>
+        $(<span class="hljs-string">&quot;.minus&quot;</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+            <span class="hljs-comment">// &#x83B7;&#x53D6;&#x64CD;&#x4F5C;&#x7684;&#x5546;&#x54C1;id</span>
+            <span class="hljs-keyword">var</span> sku_id = $(<span class="hljs-keyword">this</span>).prev().attr(<span class="hljs-string">&quot;sku_id&quot;</span>);
+            <span class="hljs-comment">// &#x83B7;&#x53D6;&#x52A0;&#x64CD;&#x4F5C;&#x524D;&#x7684;&#x7684;&#x6570;&#x91CF;</span>
+            <span class="hljs-keyword">var</span> sku_num = $(<span class="hljs-keyword">this</span>).prev().val();
+            <span class="hljs-comment">// &#x8FDB;&#x884C;&#x6570;&#x91CF;&#x52A0;1</span>
+            sku_num = <span class="hljs-built_in">parseInt</span>(sku_num);
+            sku_num -= <span class="hljs-number">1</span>;
+            <span class="hljs-keyword">if</span> (sku_num &lt; <span class="hljs-number">1</span>) sku_num = <span class="hljs-number">1</span>;
+            <span class="hljs-comment">// &#x66F4;&#x65B0;&#x9875;&#x9762;&#x663E;&#x793A;&#x6570;&#x91CF;</span>
+            <span class="hljs-keyword">var</span> num_dom = $(<span class="hljs-keyword">this</span>).prev();
+            <span class="hljs-comment">// &#x66F4;&#x65B0;&#x8D2D;&#x7269;&#x8F66;&#x6570;&#x91CF;</span>
+            updateRemoteCartInfo(sku_id, sku_num, num_dom);
+        });
+
+        <span class="hljs-keyword">var</span> pre_sku_count = <span class="hljs-number">0</span>;
+        $(<span class="hljs-string">&apos;.num_show&apos;</span>).focus(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// &#x8BB0;&#x5F55;&#x7528;&#x6237;&#x624B;&#x52A8;&#x8F93;&#x5165;&#x4E4B;&#x524D;&#x5546;&#x54C1;&#x6570;&#x76EE;</span>
+            pre_sku_count = $(<span class="hljs-keyword">this</span>).val();
+        });
+        <span class="hljs-comment">// &#x624B;&#x52A8;&#x8F93;&#x5165;</span>
+        $(<span class="hljs-string">&quot;.num_show&quot;</span>).blur(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+            <span class="hljs-keyword">var</span> sku_id = $(<span class="hljs-keyword">this</span>).attr(<span class="hljs-string">&quot;sku_id&quot;</span>);
+            <span class="hljs-keyword">var</span> sku_num = $(<span class="hljs-keyword">this</span>).val();
+            <span class="hljs-comment">// &#x5982;&#x679C;&#x8F93;&#x5165;&#x7684;&#x6570;&#x636E;&#x4E0D;&#x5408;&#x7406;&#xFF0C;&#x5219;&#x5C06;&#x8F93;&#x5165;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;&#x5728;&#x624B;&#x52A8;&#x8F93;&#x5165;&#x524D;&#x8BB0;&#x5F55;&#x7684;&#x5546;&#x54C1;&#x6570;&#x76EE;</span>
+            <span class="hljs-keyword">if</span> (<span class="hljs-built_in">isNaN</span>(sku_num) || sku_num.trim().length&lt;=<span class="hljs-number">0</span> || <span class="hljs-built_in">parseInt</span>(sku_num)&lt;=<span class="hljs-number">0</span>) {
+                $(<span class="hljs-keyword">this</span>).val(pre_sku_count);
+                <span class="hljs-keyword">return</span>;
+            }
+            sku_num = <span class="hljs-built_in">parseInt</span>(sku_num);
+            <span class="hljs-keyword">var</span> num_dom = $(<span class="hljs-keyword">this</span>);
+            updateRemoteCartInfo(sku_id, sku_num, num_dom);
+        });
+
+        <span class="hljs-comment">// &#x5220;&#x9664;</span>
+        $(<span class="hljs-string">&quot;.del_btn&quot;</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+            <span class="hljs-keyword">var</span> sku_id = $(<span class="hljs-keyword">this</span>).parents(<span class="hljs-string">&quot;ul&quot;</span>).attr(<span class="hljs-string">&quot;sku_id&quot;</span>);
+            <span class="hljs-keyword">var</span> req = {
+                sku_id: sku_id,
+                csrfmiddlewaretoken: <span class="hljs-string">&quot;{{ csrf_token }}&quot;</span>
+            };
+            $.post(<span class="hljs-string">&apos;/cart/delete&apos;</span>, req, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>)</span>{
+              <span class="hljs-comment">// window.reload()</span>
+                location.href=<span class="hljs-string">&quot;/cart/&quot;</span>;  <span class="hljs-comment">// &#x5220;&#x9664;&#x540E;&#xFF0C;&#x5237;&#x65B0;&#x9875;&#x9762;</span>
+            });
+        });
+
+        <span class="hljs-comment">// &#x5546;&#x54C1;&#x5BF9;&#x5E94;checkbox&#x53D1;&#x751F;&#x6539;&#x53D8;&#x65F6;&#xFF0C;&#x5168;&#x9009;checkbox&#x53D1;&#x751F;&#x6539;&#x53D8;</span>
+        $(<span class="hljs-string">&apos;.cart_list_td&apos;</span>).find(<span class="hljs-string">&apos;:checkbox&apos;</span>).change(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// &#x83B7;&#x53D6;&#x5546;&#x54C1;&#x6240;&#x6709;checkbox&#x7684;&#x6570;&#x76EE;</span>
+            <span class="hljs-keyword">var</span> all_len = $(<span class="hljs-string">&apos;.cart_list_td&apos;</span>).find(<span class="hljs-string">&apos;:checkbox&apos;</span>).length;
+            <span class="hljs-comment">// &#x83B7;&#x53D6;&#x9009;&#x4E2D;&#x5546;&#x54C1;&#x7684;checkbox&#x7684;&#x6570;&#x76EE;</span>
+            <span class="hljs-keyword">var</span> checked_len = $(<span class="hljs-string">&apos;.cart_list_td&apos;</span>).find(<span class="hljs-string">&apos;:checked&apos;</span>).length;
+
+            <span class="hljs-keyword">if</span> (checked_len &lt; all_len){
+                <span class="hljs-comment">// &#x6709;&#x5546;&#x54C1;&#x6CA1;&#x6709;&#x88AB;&#x9009;&#x4E2D;</span>
+                $(<span class="hljs-string">&apos;.settlements&apos;</span>).find(<span class="hljs-string">&apos;:checkbox&apos;</span>).prop(<span class="hljs-string">&apos;checked&apos;</span>, <span class="hljs-literal">false</span>)
+            }
+            <span class="hljs-keyword">else</span>{
+                <span class="hljs-comment">// &#x6240;&#x6709;&#x5546;&#x54C1;&#x90FD;&#x88AB;&#x9009;&#x4E2D;</span>
+                $(<span class="hljs-string">&apos;.settlements&apos;</span>).find(<span class="hljs-string">&apos;:checkbox&apos;</span>).prop(<span class="hljs-string">&apos;checked&apos;</span>, <span class="hljs-literal">true</span>)
+            }
+            freshOrderCommitInfo();
+        });
+
+        <span class="hljs-comment">// &#x5168;&#x9009;&#x548C;&#x5168;&#x4E0D;&#x9009;</span>
+        $(<span class="hljs-string">&apos;.settlements&apos;</span>).find(<span class="hljs-string">&apos;:checkbox&apos;</span>).change(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// 1.&#x83B7;&#x53D6;&#x5F53;&#x524D;checkbox&#x7684;&#x9009;&#x4E2D;&#x72B6;&#x6001;</span>
+            <span class="hljs-keyword">var</span> is_checked = $(<span class="hljs-keyword">this</span>).prop(<span class="hljs-string">&apos;checked&apos;</span>);
+            <span class="hljs-comment">// 2.&#x904D;&#x5386;&#x5E76;&#x8BBE;&#x7F6E;&#x5546;&#x54C1;ul&#x4E2D;checkbox&#x7684;&#x9009;&#x4E2D;&#x72B6;&#x6001;</span>
+            $(<span class="hljs-string">&apos;.cart_list_td&apos;</span>).find(<span class="hljs-string">&apos;:checkbox&apos;</span>).each(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+                <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x6BCF;&#x4E00;&#x4E2A;goods ul&#x4E2D;checkbox&#x7684;&#x503C;</span>
+                $(<span class="hljs-keyword">this</span>).prop(<span class="hljs-string">&apos;checked&apos;</span>, is_checked)
+            });
+            freshOrderCommitInfo();
+        });
+
+    </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+{% endblock %}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../cart/cartaddgoods.html" class="navigation navigation-prev " aria-label="Previous page: 商品模块购物车数量展示"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../cart/cartmerge-cookie-redis-in-login.html" class="navigation navigation-next " aria-label="Next page: 登陆时购物车合并cookie和redis"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"toggle-chapters":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book 天天生鲜 -->
+</html>
