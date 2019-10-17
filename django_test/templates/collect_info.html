@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>收集数据</title>
+</head>
+<body>
+<form id="jsLoginForm", method='post'>
+    {% csrf_token %}
+    <div class="box">
+        <span class="word3">姓名</span>
+        <input type="text" name="name" id="name_l" placeholder="姓名"/>
+    </div>
+    <div class="box">
+        <span class="word2">性别</span>
+        <input type="text" name="gender" id="gender_l" placeholder="性别"/>
+    </div>
+    <div class="box">
+        <span class="word1">年龄</span>
+        <input type="text" name="age" id="age_l" placeholder="年龄"/>
+    </div>
+    <div class="button">
+        <input type="submit" value="保存" id="jsLoginBtn"/>
+    </div>
+</form>
+
+</body>
+
+</html>
