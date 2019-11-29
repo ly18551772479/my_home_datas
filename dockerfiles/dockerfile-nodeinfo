@@ -1,0 +1,12 @@
+FROM python:3.5.9-alpine3.10
+MAINTAINER yangx.p.li@intel.com
+ENV http_proxy http://10.239.4.160:913
+ENV https_proxy http://10.239.4.160:913
+RUN pip install django==2.0 \
+    && pip install requests==2.22.0 
+COPY NodeInfo /root/NodeInfo 
+WORKDIR /root/NodeInfo
+RUN chmod a+x /root/NodeInfo/start.sh
+EXPOSE 8002
+CMD ["./start.sh"]
+

@@ -1,0 +1,11 @@
+FROM python:3.5.9-alpine3.10
+MAINTAINER yangx.p.li@intel.com
+ENV http_proxy http://10.239.4.160:913
+ENV https_proxy http://10.239.4.160:913
+RUN apk add python3-dev libressl-dev libxml2-dev libffi-dev && apk add --update alpine-sdk
+RUN pip install django==2.0 && pip install ansible==2.7.0 && pip install pywinrm==0.4.1
+COPY dj_alter /root/dj_alter 
+WORKDIR /root/dj_alter
+RUN chmod a+x /root/dj_alter/start.sh
+EXPOSE 8001
+CMD ["./start.sh"]
